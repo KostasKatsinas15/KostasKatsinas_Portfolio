@@ -70,6 +70,22 @@ footer {
     width: 75%;
 }
 
+#emailCopiedOverlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    background-color: #768EA9;
+    padding: 5px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .svg-linkedin {
     width: 60%;
 }
