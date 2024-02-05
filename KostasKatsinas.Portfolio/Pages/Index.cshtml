@@ -1,15 +1,36 @@
 ﻿@page
-@using KostasKatsinas.Portfolio.Components
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
+@using KostasKatsinas.Portfolio.
+@{ ViewData["Title"] = "Home page"; }
 
-<div class="text-center">
-    <h1 class="display-4">Kostas Katsinas</h1>
-    <p>Learn about <a href="https://www.linkedin.com/in/kostaskatsinas15/">Kostas Katsinas</a> </p>
+<div class="main-content">
+    <div class="left-section">
+        <h1>Kostas Katsinas</h1>
+        <h3>
+            Digital Product Manager
+        </h3>
+        <h3>
+            Computer Graphics Generalist
+        </h3>
+        <p>
+            I have over 3 years experience in identifying Strategic Opportunities and facilitating Sustainable Digital Transformations.
+        </p>
+        <p>
+            Expert in melding organizational and analytical skills with empathy, focusing on team development to ensure successful delivery of complex digital products.
+        </p>
+        <p>
+            With a strong foundation in Corporate Sustainability and Emerging Technologies, I possess keen insights into strategic market positioning within the ESG and tech sectors.
+        </p>
+        <p>
+            My attention to detail and comprehensive understanding allow for swift, strategic decision-making.
+        </p>
+        <p>
+            Proficient in storytelling and visual communication, I excel at articulating concepts and rallying individuals and teams towards common objectives.
+        </p>
+    </div>
+    
+    <div class="right-section">
+        <!-- Replace 'image-src.jpg' with the path to your image -->
+        <img src="c:\users\kosta\desktop\web\kostaskatsinas.portfolio\kostaskatsinas\kostaskatsinas.portfolio\media\picture_square.jpg" />
+    </div>
 </div>
-
-@(await Html.RenderComponentAsync<ProductList>(RenderMode.ServerPrerendered))
-
-<script src="_framework/blazor.server.js"></script>
