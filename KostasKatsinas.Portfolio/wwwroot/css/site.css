@@ -15,7 +15,6 @@ main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding-bottom: -16px;
 }
 
 .main-content {
@@ -25,16 +24,16 @@ main {
 }
 
 .left-section {
-    flex: 2;
+    flex: 3;
     background-color: #F1FAFF;
     padding: 80px;
 }
 
 .right-section {
-    flex: 3;
+    flex: 2;
     background-color: #3B4248;
     display: flex;
-    padding: 100px;
+    padding: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -44,10 +43,41 @@ main {
 }
 
 footer {
-    height: 204px;
     background-color: #768EA9;
     font-family: 'Nunito', sans-serif;
 }
+
+.round-element {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1FAFF;
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+}
+
+.svg-cv {
+    width: 60%;
+}
+
+.svg-pencil {
+    width: 60%;
+}
+
+.svg-email {
+    width: 75%;
+}
+
+.svg-linkedin {
+    width: 60%;
+}
+
+.round-element p {
+    font-size: 0.8rem;
+}
+
 
 @media (min-width: 768px) {
     html {

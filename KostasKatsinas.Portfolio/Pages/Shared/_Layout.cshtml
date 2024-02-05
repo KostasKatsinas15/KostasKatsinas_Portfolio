@@ -12,13 +12,44 @@
 
     <body>
 
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        @RenderBody()
 
         <footer class="footer">
-            <div class="container">
+
+            <div class="container text-center mt-4">
+                <div class="row justify-content-center">
+
+                    <div class="col">
+                        <a href="#" class="round-element s-block" onclick="action1()">
+                            <img src="~/svg/Icon_CV_White.svg" alt="Icon CV 1" class="svg-cv" />
+                        </a>
+                        <p>Download my CV</p>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="round-element s-block" onclick="action2()">
+                            <img src="~/svg/Icon_Pencil_White.svg" alt="Icon Pencil 1" class="svg-pencil" />
+                        </a>
+                        <p>Explore my Projects</p>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="round-element s-block" onclick="action3()">
+                            <img src="~/svg/Icon_Email_White.svg" alt="Icon Email 1" class="svg-email" />
+                        </a>
+                        <p>Send me an Email</p>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="round-element s-block" onclick="action4()">
+                            <img src="~/svg/Icon_LinkedIn_White.svg" alt="Icon Linkedin 1" class="svg-linkedin" />
+                        </a>
+                        <p>Visit me on Linkedin</p>
+                    </div>
+
+                </div>
             </div>
+
             <div class="container">
                 &copy; 2024 - KostasKatsinas
             </div>
