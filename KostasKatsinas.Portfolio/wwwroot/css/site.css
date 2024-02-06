@@ -36,10 +36,12 @@ main {
     padding: 20px;
     justify-content: center;
     align-items: center;
+    min-width: 20%;
 }
 
 .right-section img {
     max-width: 100%;
+    min-width: 20%;
 }
 
 footer {
@@ -56,18 +58,25 @@ footer {
     border-radius: 50%;
     width: 100px; 
     height: 100px;
+    margin: 20px;
+    transition: background-color 0.3s, filter 0.3s;
 }
 
-.svg-cv {
+.round-element:hover {
+    background-color: #0e4050;
+    filter: invert(100%);
+}
+
+.round-element:hover img {
+    filter: invert(100%);
+}
+
+.svg {
     width: 60%;
 }
 
-.svg-pencil {
-    width: 60%;
-}
-
-.svg-email {
-    width: 75%;
+.svg-mail {
+    width: 70%;
 }
 
 #emailCopiedOverlay {
@@ -86,27 +95,60 @@ footer {
     text-align: center;
 }
 
-.svg-linkedin {
-    width: 60%;
-}
-
 .round-element p {
     font-size: 0.8rem;
 }
 
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
+@media (max-width: 1200px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        flex: none;
+        width: 100%;
     }
 }
 
-p {
-    font-family: 'Nunito', sans-serif;
+h-name {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    color: #2F2F2F;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 15px;
 }
 
-h1 {
-    font-family: 'Nunito', sans-serif;
+h-title {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #515151;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+p-body {
+    display: block;
+    font-family: 'Trebuchet MS';
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+p-bold {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 ul {
