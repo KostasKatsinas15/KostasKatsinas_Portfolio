@@ -21,32 +21,41 @@ main {
     flex-grow: 1;
     display: flex;
     width: 100%;
+    background-color: #95B5DB;
 }
 
 .left-section {
     flex: 3;
     background-color: #F1FAFF;
     padding: 80px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-right: 5px;
+    box-shadow: 3px 3px 5px #2F2F2F;
 }
 
 .right-section {
     flex: 2;
-    background-color: #3B4248;
+    background-color: #344457;
     display: flex;
     padding: 20px;
     justify-content: center;
     align-items: center;
     min-width: 20%;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 5px;
+    box-shadow: 3px 3px 5px #2F2F2F;
 }
 
 .right-section img {
     max-width: 100%;
     min-width: 20%;
+    border-radius: 17px;
 }
 
 footer {
-    background-color: #768EA9;
-    font-family: 'Nunito', sans-serif;
+    background-color: #95B5DB;
 }
 
 .round-element {
@@ -59,16 +68,19 @@ footer {
     width: 100px; 
     height: 100px;
     margin: 20px;
-    transition: background-color 0.3s, filter 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, margin 0.3s;
 }
 
 .round-element:hover {
-    background-color: #0e4050;
-    filter: invert(100%);
+    background-color: #E8C53A;
+    box-shadow: 3px 3px 5px #2F2F2F;
+    margin: 10px;
 }
 
-.round-element:hover img {
-    filter: invert(100%);
+.round-element:active {
+    background-color: #F1FAFF;
+    box-shadow: none;
+    transition: background-color 0.1s, box-shadow 0.1s;
 }
 
 .svg {
@@ -85,8 +97,10 @@ footer {
     left: 50%;
     height: 70px;
     width: 150px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #2F2F2F;
     transform: translate(-50%, -50%);
-    background-color: #768EA9;
+    background-color: #95B5DB;
     padding: 5px;
     z-index: 1000;
     display: flex;
@@ -103,11 +117,23 @@ footer {
 @media (max-width: 1200px) {
     .main-content {
         flex-direction: column;
+        justify-content: center;
     }
 
     .left-section, .right-section {
         flex: none;
-        width: 100%;
+        width: auto;
+        max-width: calc(100% - 20px);
+        box-sizing: border-box;
+        margin: 10px;
+    }
+
+    .left-section {
+        margin-bottom: 5px;
+    }
+
+    .right-section {
+        margin-top: 5px;
     }
 }
 
@@ -137,7 +163,7 @@ p-body {
     font-family: 'Trebuchet MS';
     font-weight: 500;
     font-size: 16px;
-    color: #000;
+    color: #2F2F2F;
     line-height: 1.5;
     margin-bottom: 15px;
 }
@@ -146,11 +172,7 @@ p-bold {
     font-family: 'Trebuchet MS';
     font-weight: bold;
     font-size: 16px;
-    color: #000;
+    color: #2F2F2F;
     line-height: 1.5;
     margin-bottom: 15px;
-}
-
-ul {
-    font-family: 'Nunito', sans-serif;
 }
