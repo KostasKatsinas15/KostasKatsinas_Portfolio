@@ -1,18 +1,17 @@
 using KostasKatsinas.Portfolio.Services;
-using KostasKatsinas.Portfolio.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddTransient<JsonFileProductService>();
 builder.Services.AddControllers();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSingleton<CarouselImageService>();
 
 var app = builder.Build();
 
-var carouselDataService = app.Services.CreateScope().ServiceProvider.GetRequiredService<CarouselImageController>();
-carouselDataService.UpdateImageDatabase();
+var carouselImageService = app.Services.CreateScope().ServiceProvider.GetRequiredService<CarouselImageService>();
+carouselImageService.UpdateImageDatabase();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

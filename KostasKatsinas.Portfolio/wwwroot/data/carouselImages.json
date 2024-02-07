@@ -1,50 +1,56 @@
 [
   {
-    "imgName": "1_Picture_Square.JPG",
-    "imgPath": "~/images/1_Picture_Square.JPG",
-    "imgNumber": "1",
-    "imgAlt": "Image 1"
+    "ImgName": "1_Picture_Square.JPG",
+    "ImgPath": "images/1_Picture_Square.JPG",
+    "ImgNumber": "1",
+    "ImgAlt": "Image 1"
   },
   {
-    "imgName": "2_Chair_02",
-    "imgPath": "~/images/2_Chair_02",
-    "imgNumber": "2",
-    "imgAlt": "Image 2"
+    "ImgName": "2_Chair_02.png",
+    "ImgPath": "images/2_Chair_02.png",
+    "ImgNumber": "2",
+    "ImgAlt": "Image 2"
   },
   {
-    "imgName": "3_Lamp_02",
-    "imgPath": "~/images/3_Lamp_02",
-    "imgNumber": "3",
-    "imgAlt": "Image 3"
+    "ImgName": "3_Lamp_02.png",
+    "ImgPath": "images/3_Lamp_02.png",
+    "ImgNumber": "3",
+    "ImgAlt": "Image 3"
   },
   {
-    "imgName": "4_Lamp_05",
-    "imgPath": "~/images/4_Lamp_05",
-    "imgNumber": "4",
-    "imgAlt": "Image 4"
+    "ImgName": "4_Lamp_05.png",
+    "ImgPath": "images/4_Lamp_05.png",
+    "ImgNumber": "4",
+    "ImgAlt": "Image 4"
   },
   {
-    "imgName": "5_Lamp_04",
-    "imgPath": "~/images/5_Lamp_04",
-    "imgNumber": "5",
-    "imgAlt": "Image 5"
+    "ImgName": "5_Lamp_04.png",
+    "ImgPath": "images/5_Lamp_04.png",
+    "ImgNumber": "5",
+    "ImgAlt": "Image 5"
   },
   {
-    "imgName": "6_Chair_01",
-    "imgPath": "~/images/6_Chair_01",
-    "imgNumber": "6",
-    "imgAlt": "Image 6"
+    "ImgName": "6_Chair_01.png",
+    "ImgPath": "images/6_Chair_01.png",
+    "ImgNumber": "6",
+    "ImgAlt": "Image 6"
   },
   {
-    "imgName": "7_Lamp_06",
-    "imgPath": "~/images/7_Lamp_06",
-    "imgNumber": "7",
-    "imgAlt": "Image 7"
+    "ImgName": "7_Lamp_06.png",
+    "ImgPath": "images/7_Lamp_06.png",
+    "ImgNumber": "7",
+    "ImgAlt": "Image 7"
   },
   {
-    "imgName": "8_Lamp_03",
-    "imgPath": "~/images/8_Lamp_03",
-    "imgNumber": "8",
-    "imgAlt": "Image 8"
+    "ImgName": "8_Lamp_03.png",
+    "ImgPath": "images/8_Lamp_03.png",
+    "ImgNumber": "8",
+    "ImgAlt": "Image 8"
+  },
+  {
+    "ImgName": "9_Mayor.png",
+    "ImgPath": "images/9_Mayor.png",
+    "ImgNumber": "9",
+    "ImgAlt": "Image 9"
   }
 ]

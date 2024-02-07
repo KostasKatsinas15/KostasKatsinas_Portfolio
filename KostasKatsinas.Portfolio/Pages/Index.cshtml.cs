@@ -1,10 +1,9 @@
-using KostasKatsinas.Portfolio.Controllers;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
-using static CarouselImageController;
+using KostasKatsinas.Portfolio.Models;
 
 namespace KostasKatsinas.Portfolio.Pages
 {
@@ -20,7 +19,7 @@ namespace KostasKatsinas.Portfolio.Pages
 
 		public void OnGet() 
 		{
-            var filePath = Path.Combine(_env.WebRootPath, "images/data/carouselImages.json");
+            var filePath = Path.Combine(_env.WebRootPath, "data/carouselImages.json");
             var jsonData = System.IO.File.ReadAllText(filePath);
             Images = JsonConvert.DeserializeObject<List<ImageInfo>>(jsonData) ?? new List<ImageInfo>();
         }
