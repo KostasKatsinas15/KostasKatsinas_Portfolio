@@ -137,6 +137,12 @@ footer {
     }
 }
 
+@media (max-width: 800px) {
+    .left-section {
+        padding: 20px;
+    }
+}
+
 h-name {
     display: block;
     font-family: Arial, Helvetica, sans-serif;

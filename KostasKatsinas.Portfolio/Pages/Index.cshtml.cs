@@ -1,13 +1,10 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.IO;
 using KostasKatsinas.Portfolio.Models;
 
 namespace KostasKatsinas.Portfolio.Pages
 {
-	public class IndexModel : PageModel
+    public class IndexModel : PageModel
 	{
 		private readonly IWebHostEnvironment _env;
 		public List<ImageInfo> Images { get; set; }
