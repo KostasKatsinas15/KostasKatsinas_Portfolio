@@ -1,27 +1,29 @@
-using KostasKatsinas.Portfolio.Services;
-using KostasKatsinas.Portfolio.Models;
-using Microsoft.AspNetCore.Mvc;
+using KostasKatsinas.Portfolio.Controllers;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Hosting;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
+using static CarouselImageController;
 
 namespace KostasKatsinas.Portfolio.Pages
 {
 	public class IndexModel : PageModel
 	{
-		private readonly ILogger<IndexModel> _logger;
-		public JsonFileProductService ProductService;
-		public IEnumerable<Product> Products { get; private set; }
+		private readonly IWebHostEnvironment _env;
+		public List<ImageInfo> Images { get; set; }
 
-		public IndexModel(
-			ILogger<IndexModel> logger,
-			JsonFileProductService productService)
+		public IndexModel(IWebHostEnvironment env)
 		{
-			_logger = logger;
-			ProductService = productService;
+			_env = env;
 		}
 
-		public void OnGet()
+		public void OnGet() 
 		{
-			Products = ProductService.GetProducts();
-		}
+            var filePath = Path.Combine(_env.WebRootPath, "images/data/carouselImages.json");
+            var jsonData = System.IO.File.ReadAllText(filePath);
+            Images = JsonConvert.DeserializeObject<List<ImageInfo>>(jsonData) ?? new List<ImageInfo>();
+        }
 	}
+
 }

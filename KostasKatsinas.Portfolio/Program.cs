@@ -1,6 +1,5 @@
 using KostasKatsinas.Portfolio.Services;
-using KostasKatsinas.Portfolio.Models;
-using System.Text.Json;
+using KostasKatsinas.Portfolio.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
+
+var carouselDataService = app.Services.CreateScope().ServiceProvider.GetRequiredService<CarouselImageController>();
+carouselDataService.UpdateImageDatabase();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -37,3 +39,5 @@ app.UseEndpoints(endpoints =>
 app.MapRazorPages();
 
 app.Run();
+
+

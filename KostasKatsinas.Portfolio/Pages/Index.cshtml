@@ -24,6 +24,27 @@
     </div>
     
     <div class="right-section">
+       
+        <div id="imageCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                @for (int i = 0; i < Model.Images.Count; i++)
+                {
+                    <button type="button" data-bs-target="#imageCarouselIndicators" data-bs-slide-to="@i" class="@(i == 0 ? "active" : "")" aria-current="@(i == 0 ? "true" : "false")" aria-label="@Model.Images[i].ImgAlt"></button>
+                }
+            </div>
+
+            <div class="carousel-inner">
+                @for (int i = 0; i < Model.Images.Count; i++)
+                {
+                    <div class="carousel-item @(i == 0 ? "active" : "")" data-bs-interval= "@(i == 0 ? "5000" : "3000")">
+                        <img src="@Model.Images[i].ImgPath" class="d-block w-100" alt="@Model.Images[i].ImgAlt">
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    @* <div class="right-section">
 
         <div id="imageCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -66,5 +87,5 @@
 
         </div>
 
-    </div>
+    </div> *@
 </div>

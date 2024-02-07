@@ -7,14 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\images\Chair_01.png" />
-    <None Include="wwwroot\images\Chair_02.png" />
-    <None Include="wwwroot\images\Lamp_02.png" />
-    <None Include="wwwroot\images\Lamp_03.png" />
-    <None Include="wwwroot\images\Lamp_04.png" />
-    <None Include="wwwroot\images\Lamp_05.png" />
-    <None Include="wwwroot\images\Lamp_06.png" />
-    <None Include="wwwroot\images\Picture_Square.JPG" />
+    <None Include="wwwroot\images\6_Chair_01.png" />
+    <None Include="wwwroot\images\2_Chair_02.png" />
+    <None Include="wwwroot\images\3_Lamp_02.png" />
+    <None Include="wwwroot\images\8_Lamp_03.png" />
+    <None Include="wwwroot\images\5_Lamp_04.png" />
+    <None Include="wwwroot\images\4_Lamp_05.png" />
+    <None Include="wwwroot\images\7_Lamp_06.png" />
+    <None Include="wwwroot\images\1_Picture_Square.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

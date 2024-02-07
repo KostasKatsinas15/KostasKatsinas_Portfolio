@@ -1,0 +1,50 @@
+[
+  {
+    "imgName": "1_Picture_Square.JPG",
+    "imgPath": "~/images/1_Picture_Square.JPG",
+    "imgNumber": "1",
+    "imgAlt": "Image 1"
+  },
+  {
+    "imgName": "2_Chair_02",
+    "imgPath": "~/images/2_Chair_02",
+    "imgNumber": "2",
+    "imgAlt": "Image 2"
+  },
+  {
+    "imgName": "3_Lamp_02",
+    "imgPath": "~/images/3_Lamp_02",
+    "imgNumber": "3",
+    "imgAlt": "Image 3"
+  },
+  {
+    "imgName": "4_Lamp_05",
+    "imgPath": "~/images/4_Lamp_05",
+    "imgNumber": "4",
+    "imgAlt": "Image 4"
+  },
+  {
+    "imgName": "5_Lamp_04",
+    "imgPath": "~/images/5_Lamp_04",
+    "imgNumber": "5",
+    "imgAlt": "Image 5"
+  },
+  {
+    "imgName": "6_Chair_01",
+    "imgPath": "~/images/6_Chair_01",
+    "imgNumber": "6",
+    "imgAlt": "Image 6"
+  },
+  {
+    "imgName": "7_Lamp_06",
+    "imgPath": "~/images/7_Lamp_06",
+    "imgNumber": "7",
+    "imgAlt": "Image 7"
+  },
+  {
+    "imgName": "8_Lamp_03",
+    "imgPath": "~/images/8_Lamp_03",
+    "imgNumber": "8",
+    "imgAlt": "Image 8"
+  }
+]
